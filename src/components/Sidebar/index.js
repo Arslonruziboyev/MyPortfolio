@@ -8,7 +8,7 @@ import {
   faChrome,
   faHouzz,
 } from "@fortawesome/free-brands-svg-icons";
-import { FaEnvelope, FaHome, FaUser } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaHome, FaLinkedin, FaSkype, FaUser, FaYoutube } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
@@ -18,12 +18,12 @@ const Sidebar = () => {
         <img className="sub-logo" src={LogoSubtitle} alt="Subtitle Logo" />
       </Link>
       <nav>
-        <NavLink exact="true" activeClassName="active" to="/">
+        <NavLink exact="true" activeclassname="active" to="/">
           <FaHome color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
-          activeClassName="active"
+          activeclassname="active"
           className="about-link"
           to="/about"
         >
@@ -31,13 +31,35 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           exact="true"
-          activeClassName="active"
+          activeclassname="active"
           className="contact-link"
           to="/contact"
         >
           <FaEnvelope color="#4d4d4e" />
         </NavLink>
       </nav>
+      <ul>
+        <li>
+            <a target="_blank" rel="noreferrer" href="no web">
+                <FaLinkedin color="#4d4d4e" />
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel="noreferrer" href="no web">
+                <FaGithub color="#4d4d4e" />
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel="noreferrer" href="no web">
+                <FaYoutube color="#4d4d4e" />
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel="noreferrer" href="no web">
+                <FaSkype color="#4d4d4e" />
+            </a>
+        </li>
+      </ul>
     </div>
   );
 };
